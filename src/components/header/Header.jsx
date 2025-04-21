@@ -1,16 +1,21 @@
+import { Logo } from '@components/common/Logo';
+
+import { Burger } from './Burger';
+import { HeaderIcons } from './HeaderIcons';
+import { SearchBar } from './SearchBar';
+
 function Header() {
   return (
-    <nav className="flex">
-      <div className="flex">
-        <h2>cyber</h2>
-        <input placeholder="search"></input>
-      </div>
-      <div className="flex">
-        <div>like</div>
-        <div>Cart</div>
-        <div>myPage</div>
-      </div>
-    </nav>
+    <div className="w-full">
+      <nav className="flex items-center justify-between mx-auto max-w-[1200px] px-4 py-6">
+        <div className="flex">
+          <Logo />
+          <SearchBar />
+        </div>
+        <HeaderIcons />
+        <Burger />
+      </nav>
+    </div>
   );
 }
 
