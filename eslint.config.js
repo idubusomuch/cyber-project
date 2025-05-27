@@ -52,6 +52,8 @@ export default [
 
       'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx'] }],
       'react/react-in-jsx-scope': 'off',
+      'react/prop-types': 'off',
+      'import/no-unresolved': 'off',
       'no-unused-vars': ['warn', { varsIgnorePattern: '^[A-Z_]' }],
       'react-refresh/only-export-components': [
         'warn',
