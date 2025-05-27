@@ -1,11 +1,20 @@
+import { fetchAllProducts } from '@api/fetchURL';
 import useFetch from '@hooks/useFetch';
 
+import ProductCards from '@components/ProductCard/ProductCards';
+
 function ProductsPage() {
-  const { data, loading, error } = useFetch('https://dummyjson.com/products');
+  const { data, loading } = useFetch({ query: fetchAllProducts });
+  const products = data?.products || [];
+
   return (
-    <div>
+    <div className="mx-auto max-w-[1200px]">
       <p> Products Result : </p>
-      <div>~</div>
+      <div className="list-container">
+        {loading
+          ? '준비중'
+          : products.map((el) => <ProductCards key={el.id} product={el} />)}
+      </div>
     </div>
   );
 }

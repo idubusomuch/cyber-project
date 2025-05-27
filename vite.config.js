@@ -24,6 +24,10 @@ export default defineConfig({
         replacement: '/src/hooks',
       },
       {
+        find: '@api',
+        replacement: '/src/api',
+      },
+      {
         find: '@icons',
         replacement: '/src/assets/icons',
       },
