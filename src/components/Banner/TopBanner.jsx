@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Button from '@components/common/Button';
 import PcImg from '@images/Iphone.png';
 import MobileImg from '@images/IphoneMobileImage.png';
@@ -16,7 +18,9 @@ function TopBanner() {
           <p className="text-[#909090] pb-5">
             Created to Change everything for the better. For everyone
           </p>
-          <Button btnColor="transparent">Shop Now</Button>
+          <Link to={'/products'}>
+            <Button btnColor="transparent">Shop Now</Button>
+          </Link>
         </div>
         <img
           src={MobileImg}

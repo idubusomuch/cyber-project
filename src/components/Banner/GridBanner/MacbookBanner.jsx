@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Button from '@components/common/Button';
 import MacbookAir from '@images/MacBookPro14.png';
 
@@ -19,9 +21,11 @@ export default function MacbookBanner() {
           The new 15‑inch MacBook Air makes room for more of what you love with
           a spacious Liquid Retina display.
         </p>
-        <Button btnColor="white" className="mt-4">
-          Shop Now
-        </Button>
+        <Link to={'/products'}>
+          <Button btnColor="white" className="mt-4">
+            Shop Now
+          </Button>
+        </Link>
       </div>
       <div className="hidden lg:block overflow-hidden">
         <img

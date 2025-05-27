@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import Button from '@components/common/Button';
 import MobileImg from '@images/bottomBannerMobile.png';
 import PcImg from '@images/bottomBannerPc.png';
@@ -25,7 +27,9 @@ export default function BottomBanner() {
         <p className="text-[#909090] font-thin text-[1.2em] pb-5">
           Commodo fames vitae vitae leo mauris in. Eu consequat.
         </p>
-        <Button btnColor="transparent">Shop Now</Button>
+        <Link to={'/products'}>
+          <Button btnColor="transparent">Shop Now</Button>
+        </Link>
       </div>
     </div>
   );
