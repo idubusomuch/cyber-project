@@ -36,4 +36,8 @@
     @apply w-full max-w-[1200px] grid m-[10px_auto] p-[15px] gap-[15px] justify-items-center;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
+
+  .skeleton-item {
+    @apply bg-gray-200 rounded animate-pulse mx-auto;
+  }
 }

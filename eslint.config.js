@@ -89,9 +89,11 @@ export default [
       'import/resolver': {
         alias: {
           map: [
-            ['@', './src'],
+            ['@', './src/'],
             ['@components', './src/components'],
             ['@pages', './src/pages'],
+            ['@api', './src/api'],
+            ['@hooks', './src/hooks'],
             ['@icons', './src/assets/icons'],
             ['@images', './src/assets/images'],
           ],
