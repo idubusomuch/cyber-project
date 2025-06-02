@@ -6,7 +6,7 @@ export const fetchAllProducts = () => {
   return fetchAPI(`${API_URL}products`);
 };
 
-export const fetchProductsInfiniteScroll = (skip = 0, limit = 20) => {
+export const fetchProductsInfiniteScroll = (skip = 0, limit = 8) => {
   console.log('[API 호출]', skip, limit);
   return fetchAPI(`${API_URL}products?limit=${limit}&skip=${skip}`);
 };
