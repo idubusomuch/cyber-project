@@ -12,8 +12,8 @@ export const fetchProductsInfiniteScroll = (skip = 0, limit = 8) => {
 };
 
 // 카테고리 별
-export const fetchCategoryProducts = (category) => {
-  return fetchAPI(`${API_URL}products/category/${category}`);
+export const fetchCategoryProducts = (category, limit = 8) => {
+  return fetchAPI(`${API_URL}products/category/${category}?limit=${limit}`);
 };
 
 // 검색
