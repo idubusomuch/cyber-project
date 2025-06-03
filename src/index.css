@@ -44,4 +44,12 @@
   .skeleton-item {
     @apply bg-gray-200 rounded animate-pulse mx-auto;
   }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
 }

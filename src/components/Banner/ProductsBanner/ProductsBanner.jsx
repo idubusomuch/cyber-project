@@ -8,7 +8,13 @@ import ProductCards from '@components/ProductCard/ProductCards';
 import { ProductCardSkeleton } from '@components/SkeletonUI';
 
 export default function ProductsBanner() {
-  const categories = ['All', 'Clothes', 'Electronics', 'Furniture', 'Shoes'];
+  const categories = [
+    'All',
+    'Groceries',
+    'Beauty',
+    'Home-decoration',
+    'Sports-accessories',
+  ];
   const [category, setCategory] = useState('All');
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -36,7 +42,7 @@ export default function ProductsBanner() {
 
   return (
     <div className="mx-auto max-w-[1200px] px-4 pb-6">
-      <div className="px-4 text-[1.3em] cursor-pointer text-[#8b8b8b] flex gap-6 mb-6">
+      <div className="px-4 text-[1.3em] cursor-pointer text-[#8b8b8b] flex gap-6 mb-6 overflow-x-auto whitespace-nowrap no-scrollbar">
         {categories.map((el) => (
           <button
             key={el}

@@ -9,7 +9,7 @@ function Button({
 }) {
   const sizeClasses = {
     sm: 'text-sm rounded-lg w-full py-4 sm:px-14',
-    md: 'text-base rounded-md py-3 sm:px-16',
+    md: 'text-base rounded-md py-3 px-16',
   };
 
   const colorClasses = {
