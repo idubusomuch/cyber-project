@@ -32,7 +32,7 @@ function ProductsPage() {
           <ProductCards key={el.id} product={el} />
         ))}
         {loading &&
-          Array.from({ length: 12 }).map((_, i) => (
+          Array.from({ length: 8 }).map((_, i) => (
             <ProductCardSkeleton key={i} />
           ))}
       </div>

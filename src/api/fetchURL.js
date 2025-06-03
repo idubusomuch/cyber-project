@@ -6,14 +6,14 @@ export const fetchAllProducts = () => {
   return fetchAPI(`${API_URL}products`);
 };
 
-export const fetchProductsInfiniteScroll = (skip = 0, limit = 20) => {
+export const fetchProductsInfiniteScroll = (skip = 0, limit = 8) => {
   console.log('[API 호출]', skip, limit);
   return fetchAPI(`${API_URL}products?limit=${limit}&skip=${skip}`);
 };
 
 // 카테고리 별
-export const fetchCategoryProducts = (category) => {
-  return fetchAPI(`${API_URL}products/category/${category}`);
+export const fetchCategoryProducts = (category, limit = 8) => {
+  return fetchAPI(`${API_URL}products/category/${category}?limit=${limit}`);
 };
 
 // 검색
