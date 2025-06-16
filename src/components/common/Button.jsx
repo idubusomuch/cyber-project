@@ -22,7 +22,7 @@ function Button({
 
   return (
     <button
-      className={`btn-style rounded sm:max-w-fit ${colorClasses[btnColor]} ${sizeClasses[size]} flex-center gap-2`}
+      className={`btn-style cursor-pointer rounded sm:max-w-fit ${colorClasses[btnColor]} ${sizeClasses[size]} flex-center gap-2`}
       type={type}
     >
       {children}

@@ -23,7 +23,7 @@ function ProductsPage() {
   });
 
   return (
-    <div className="mx-auto max-w-[1200px] px-4">
+    <div className="mx-auto max-w-[1200px] px-4 pb-72">
       <p className="px-4 text-[1.3em]">
         Products Result : <b>{products.length}</b>
       </p>
