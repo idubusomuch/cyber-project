@@ -1,22 +1,30 @@
 import { useState } from 'react';
 
+import useLazyImageObserver from '@/hooks/useLazyImageObserver';
+
 import LikeButton from './LikeButton';
 import Button from '../common/Button';
 
 function LazyImage({ src, alt }) {
   const [loading, setLoading] = useState(false);
+  const [imgRef, isInView] = useLazyImageObserver();
 
   return (
-    <div className="relative w-full aspect-square object-cover py-6 rounded-lg">
+    <div
+      className="relative w-full aspect-square object-cover py-6 rounded-lg"
+      ref={imgRef}
+    >
       {!loading && <div className="absolute inset-0 skeleton-item" />}
-      <img
-        src={src}
-        alt={alt}
-        onLoad={() => setLoading(true)}
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
-          loading ? 'opacity-100' : 'opacity-0'
-        }`}
-      />
+      {isInView && (
+        <img
+          src={src}
+          alt={alt}
+          onLoad={() => setLoading(true)}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+            loading ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+      )}
     </div>
   );
 }

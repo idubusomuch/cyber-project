@@ -8,8 +8,8 @@ function Button({
   showArrow = false,
 }) {
   const sizeClasses = {
-    sm: 'text-sm rounded-lg px-14 py-4',
-    md: 'text-base rounded-md px-16 py-3',
+    sm: 'text-sm rounded-lg w-full py-4 sm:px-14',
+    md: 'text-base rounded-md py-3 px-16',
   };
 
   const colorClasses = {
@@ -22,7 +22,7 @@ function Button({
 
   return (
     <button
-      className={`btn-style rounded ${colorClasses[btnColor]} ${sizeClasses[size]} flex items-center gap-2`}
+      className={`btn-style rounded sm:max-w-fit ${colorClasses[btnColor]} ${sizeClasses[size]} flex-center gap-2`}
       type={type}
     >
       {children}

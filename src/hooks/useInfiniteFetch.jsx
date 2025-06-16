@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-export default function useInfiniteFetch({ query, limit = 12 }) {
+export default function useInfiniteFetch({ query, limit = 8 }) {
   const [data, setData] = useState([]);
   const [skip, setSkip] = useState(0);
   const [moreData, setMoreData] = useState(true);
