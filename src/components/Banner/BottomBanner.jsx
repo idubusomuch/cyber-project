@@ -3,8 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Button from '@components/common/Button';
-import MobileImg from '@images/bottomBannerMobile.png';
-import PcImg from '@images/bottomBannerPc.png';
+import MobileImg from '@images/webp/bottomBannerMobile.webp';
+import PcImg from '@images/webp/bottomBannerPc.webp';
 
 export default function BottomBanner() {
   return (

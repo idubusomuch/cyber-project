@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import Button from '@components/common/Button';
-import MacbookAir from '@images/MacBookPro14.png';
+import MacbookAir from '@images/Webp/MacBookPro14.webp';
 
 export default function MacbookBanner() {
   return (

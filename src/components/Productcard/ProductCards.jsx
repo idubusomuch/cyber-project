@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-import useLazyImageObserver from '@/hooks/useLazyImageObserver';
-
 import LikeButton from './LikeButton';
 import Button from '../common/Button';
 

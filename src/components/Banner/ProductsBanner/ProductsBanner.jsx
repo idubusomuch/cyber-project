@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import {
-  fetchCategoryProducts,
+  fetchCategoryProductsBanner,
   fetchProductsInfiniteScroll,
 } from '@api/fetchURL';
 import ProductCards from '@components/ProductCard/ProductCards';
@@ -27,7 +27,7 @@ export default function ProductsBanner() {
         if (category === 'All') {
           res = await fetchProductsInfiniteScroll(0, 8);
         } else {
-          res = await fetchCategoryProducts(category, 8);
+          res = await fetchCategoryProductsBanner(category, 8);
         }
         setProducts(res.products);
       } catch (err) {
