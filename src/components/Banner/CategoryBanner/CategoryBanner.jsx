@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import Arrow from '@icons/24px/Arrow.svg';
 import Cameras from '@icons/Cameras.svg';
 import Computers from '@icons/Computers.svg';
@@ -31,12 +33,24 @@ export default function CategoryBanner() {
         </div>
       </div>
       <div className="grid grid-cols-2 gap-5 py-5 md:grid-cols-3 lg:grid-cols-6">
-        <CategoryCard icon={phones} title="Phones" />
-        <CategoryCard icon={SmartWatches} title="Smart Watches" />
-        <CategoryCard icon={Cameras} title="Cameras" />
-        <CategoryCard icon={Headphones} title="Headphones" />
-        <CategoryCard icon={Computers} title="Computers" />
-        <CategoryCard icon={Gaming} title="Gaming" />
+        <Link to="products/smartphones">
+          <CategoryCard icon={phones} title="Phones" />
+        </Link>
+        <Link to="products/furniture">
+          <CategoryCard icon={SmartWatches} title="Smart Watches" />
+        </Link>
+        <Link to="products/kitchen-accessories">
+          <CategoryCard icon={Cameras} title="Cameras" />
+        </Link>
+        <Link to="products/beauty">
+          <CategoryCard icon={Headphones} title="Headphones" />
+        </Link>
+        <Link to="products/tablets">
+          <CategoryCard icon={Computers} title="Computers" />
+        </Link>
+        <Link to="products/motorcycle">
+          <CategoryCard icon={Gaming} title="Gaming" />
+        </Link>
       </div>
     </div>
   );
