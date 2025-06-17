@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Airpods from '@images/AirpodsMax.png';
-import Vision from '@images/AppleVisionPro.png';
-import Playstation from '@images/Playstation.png';
+import Airpods from '@images/webp/AirpodsMax.webp';
+import Vision from '@images/webp/AppleVisionPro.webp';
+import Playstation from '@images/webp/Playstation.webp';
 
 import GridBanner from './GridBanner';
 import MacbookBanner from './MacbookBanner';

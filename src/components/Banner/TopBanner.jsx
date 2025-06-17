@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
 import Button from '@components/common/Button';
-import PcImg from '@images/Iphone.png';
-import MobileImg from '@images/IphoneMobileImage.png';
+import PcImg from '@images/webp/Iphone.webp';
+import MobileImg from '@images/webp/IphoneMobileImage.webp';
 
 function TopBanner() {
   return (
